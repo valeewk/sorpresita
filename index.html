@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una Sorpresa para Ti</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #ff6347;
+        }
+        p {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .button {
+            background-color: #ff6347;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5em;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .surprise {
+            display: none;
+            font-size: 2em;
+            color: #ff69b4;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Hola Amor!</h1>
+    <p>Hice esta pequeña sorpresa solo para ti. Haz clic en el botón de abajo para descubrir algo especial...</p>
+    
+    <button class="button" onclick="revealSurprise()">Haz clic aquí</button>
+    
+    <div class="surprise" id="surpriseMessage">
+        ❤️ ¡Eres lo mejor que me ha pasado, te amo! ❤️
+    </div>
+
+    <script>
+        function revealSurprise() {
+            var surprise = document.getElementById('surpriseMessage');
+            surprise.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
